@@ -1,0 +1,21 @@
+ % Yeni bir nesneyi (değişken), bu üç girişi kullanarak course fonksiyonunu çağırarak oluşturulabilir. 
+c = course("Family Fun","White",w)
+
+ % Bir katılımcı bir nesne oluşturmak için bir ID kayıt ettiğinde, ID  birçok bilgiyi içerir ilk oluşturulduğunda genellikle boştur. 
+% Bir ID çubuğunu temsil etmek için idstick fonksiyonunu, ID çubuğunun seri numarasını temsil eden tek bir girişle çağırarak bir nesne oluşturabilirsiniz.
+
+id = idstick(123456)
+
+ % Oluşturduğumuz değişkenler, course ve idstick adlı özel sınıfların nesneleridir. 
+whos
+
+  % Çalışma alanınızdaki bir nesnenin özelliklerinin (içerdikleri bilgilerin) isimlerini görmek için properties fonksiyonunu kullanabilirsiniz.
+% Benzer şekilde, nesnenizle çalışan metodların (fonksiyonların) isimlerini görmek için methods fonksiyonunu kullanabilirsiniz.
+properties(id)
+methods(id)
+
+  % ID  nesnelerinde "register" adında bir metod bulunmaktadır. Bu metod, bir katılımcının ID  ile bir nesneye kaydolmasını simüle eder. 
+id = register(id,"Astrid",c)
+
+  % ID  nesnelerinin aynı zamanda bir katılımcının bir yol noktasında kontrol yapmasını simüle etmek için bir metodları bulunmaktadır. Burada "waypt", yol noktasının numarasını temsil eder. 
+id = checkWaypoint(id,42)
