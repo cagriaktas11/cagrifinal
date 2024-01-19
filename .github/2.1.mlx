@@ -1,0 +1,21 @@
+% Özel Sınıf Oluşturma
+
+
+% Eğer bir sınıf tanımlama dosyanız varsa. Yeni bir değişken  olan obj'yi classname türünde oluşturacaktır.
+
+c = course
+
+% Özel nesnelerinizin özelliklerinde depolanan değerlere erişmek için MATLAB'teki diğer nesnelerle aynı şekilde object.Property indeksleme yöntemini kullanabilirsiniz.
+
+ 
+c = course
+lvl = c.Level
+
+% Özellik değerlerini değiştirmek için object.Property'ye atama yapabilirsiniz.
+
+
+c.Level = "White"
+
+ 
+
+
